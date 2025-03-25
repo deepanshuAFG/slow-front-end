@@ -1,0 +1,3 @@
+✅ Tailwind CSS: Speeds up layout design and maintains consistency.
+✅ CSS Modules: Keeps component styles isolated and prevents conflicts.
+✅ Best of Both Worlds: You get a clean, structured approach without
