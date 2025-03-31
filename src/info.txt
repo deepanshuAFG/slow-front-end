@@ -1,3 +1,45 @@
 ✅ Tailwind CSS: Speeds up layout design and maintains consistency.
 ✅ CSS Modules: Keeps component styles isolated and prevents conflicts.
 ✅ Best of Both Worlds: You get a clean, structured approach without
+/my-spa-app/                        # Root of the React application
+├── public/                         # Static files served directly by React
+│   ├── index.html                  # Main HTML file (only one HTML for the SPA)
+│   ├── favicon.ico                 # Favicon
+│   └── manifest.json               # Web app manifest for PWA support (optional)
+├── src/                            # All the React source files
+│   ├── assets/                     # Static assets like images, fonts, etc.
+│   │   └── logo.png                # App logo, etc.
+│   ├── components/                 # Reusable components across the app
+│   │   ├── Navbar.js               # Navigation bar for routing
+│   │   ├── Footer.js               # Footer component
+│   │   ├── Sidebar.js              # Sidebar (if any) for navigation
+│   │   └── PrivateRoute.js         # Custom Route component for protected pages
+│   ├── pages/                      # Pages representing different views/screens
+│   │   ├── LoginPage.js            # Login page
+│   │   ├── HomePage.js             # Home/dashboard page after login
+│   │   ├── ProfilePage.js          # Profile page for the logged-in user (optional)
+│   │   └── NotFoundPage.js         # Page for 404 errors
+│   ├── services/                   # Helper functions to interact with the backend (APIs)
+│   │   ├── authService.js          # Login, logout, token validation logic
+│   │   ├── taskService.js          # Service for handling tasks (example)
+│   │   └── statisticsService.js    # Service for fetching stats (example)
+│   ├── context/                    # Global state management using React Context API or Redux
+│   │   └── AuthContext.js          # Context to manage user authentication state (e.g., JWT)
+│   ├── utils/                      # Helper utilities or custom hooks
+│   │   ├── useAuth.js              # Custom hook to get authentication state
+│   │   └── useFetch.js             # Custom hook for API fetching
+│   ├── App.js                      # Main component that includes routes
+│   ├── main.js                    # Entry point for the app (ReactDOM.render)
+│   ├── routes.js                   # Central place for defining all routes
+│   └── styles/                     # Global styles and TailwindCSS configuration
+│       ├── tailwind.config.js       # Tailwind configuration file
+│       ├── index.css               # Global styles (TailwindCSS, custom CSS)
+│       └── App.css                 # Styles specific to App.js
+└── package.json   
+/*
+color pallet
+1, #2c2c2c
+2, #4f4f4f
+3, #8a8a8a
+4, #bfbfbf
+*/
