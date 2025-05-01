@@ -1,1 +1,42 @@
 @import 'tailwindcss';
+
+@font-face {
+    font-family: "Geist";
+    src: url('/src/assets/Fonts/geist-font-family-1707502273-0/Geist-Thin-BF6569491e12aff.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Geist";
+    src: url('/src/assets/Fonts/geist-font-family-1707502273-0/Geist-Medium-BF6569491e1c281.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Geist";
+    src: url('/src/assets/Fonts/geist-font-family-1707502273-0/Geist-Bold-BF6569491da5a14.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@layer base {
+    body {
+        font-family: "Geist", sans-serif;
+    }
+}
+.geist-thin {
+    font-family: "Geist", sans-serif;
+    font-weight: 300;
+}
+
+.geist-medium {
+    font-family: "Geist", sans-serif;
+    font-weight: 500;
+}
+
+.geist-bold {
+    font-family: "Geist", sans-serif;
+    font-weight: 700;
+}

@@ -42,4 +42,5 @@ color pallet
 2, #4f4f4f
 3, #8a8a8a
 4, #bfbfbf
+5, #141414
 */

@@ -22,6 +22,7 @@ function LoginPage() {
 
       const token = response.data;
       login(token); // Use login function from AuthProvider
+      localStorage.setItem("username",username);
       navigate("/HomePage"); // Redirect to dashboard after login
     } catch (err) {
       setError(err.response?.data?.message || "Invalid credentials");
